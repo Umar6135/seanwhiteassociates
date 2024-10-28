@@ -487,23 +487,79 @@ include('header.php');
 
 
         <!-- Callback Start -->
-        <section id="callback" class=" callback mb-5 py-5">
-          <div class="container pt-5">
-              <div class="row justify-content-center">
-                  <div class="col-lg-7">
-                      <div class="bg-white border rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.5s">
-                          <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                              <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Get In Touch
-                              </p>
-                              <h5 class="display-5 mb-5">Request A Call-Back</h5>
-                          </div>
-                          <script type="text/javascript" src="https://form.jotform.com/jsform/242834671749064"></script>
-
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </section>
+        <section id="callback" class="callback mb-5 py-5">
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="bg-white border rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                        <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Get In Touch</p>
+                        <h5 class="display-5 mb-5">Request A Call-Back</h5>
+                    </div>
+                    <!-- Form Starts Here -->
+                    <form id="callbackForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label text-dark" style="font-size: 18px;">First Name</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label text-dark" style="font-size: 18px;">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label text-dark" style="font-size: 18px;">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label text-dark" style="font-size: 18px;">Phone</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn theme-btn dark p-0">Submit</button>
+                        </div>
+                    </form>
+                    <!-- Form Ends Here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
       <!-- Callback End -->
       <?php include('footer.php'); ?>
-   
+      <script>
+    document.getElementById('callbackForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        
+        // Create an object to hold form data
+        const formData = {
+            firstName: document.getElementById('firstName').value,
+            lastName: document.getElementById('lastName').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value
+        };
+        
+        // Send data as JSON
+        fetch('./action/lead_webhook.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Handle success
+            console.log('Success:', data);
+            alert('Form submitted successfully!');
+        })
+        .catch((error) => {
+            // Handle error
+            console.error('Error:', error);
+            alert('There was an error submitting the form.');
+        });
+    });
+</script>

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "stripe/stripe-php": "^16.1",
+        "authorizenet/authorizenet": "^2.0"
+    }
+}
