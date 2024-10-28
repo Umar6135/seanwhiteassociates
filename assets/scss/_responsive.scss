@@ -1,0 +1,759 @@
+
+
+
+@media(min-width:991px) {
+    .choice {
+        .row.justify-content-center {
+            gap: 110px;
+        }
+        .choose-left {
+            margin: 0 0 0 auto;
+            max-width: 384px;
+        }
+        .choose-right{
+           
+    max-width: 280px;
+        }
+     .trusted-choice .section-paragraph {
+            padding-bottom: 0;
+        }
+    }
+    .custom-home-container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 850px;
+        width: 100%;
+    }
+    .work-steps{
+        
+    margin: 0 auto;
+    max-width: 1050px;
+    width: 100%;
+    }
+    .tailored-content p{
+        
+    max-width: 279px;
+    margin-bottom: 5px;
+    }
+    .plans-cards{
+        margin: 0 auto;
+        max-width: 1050px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+    .financial .theme-btn{
+        margin-bottom: 0 !important;
+    }
+    
+    .gurantee-content{
+        margin: 0;
+        max-width: 322px;
+        margin-right: auto;
+    }
+}
+
+@media(max-width:1200px) {
+    .opportunities .col-xl-2 {
+        margin-bottom: 20px;
+    }
+
+    .opportunities .theme-btn {
+
+        margin: 10px auto;
+    }
+
+    .opportunities-list {
+        margin-bottom: 15px;
+    }
+
+    .opportunities .row {
+        justify-content: center;
+    }
+
+    .section-heading {
+        font-size: 30px;
+    }
+
+    .section-paragraph {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    .gurantee-content {
+        max-width: 80%;
+    }
+
+    .work-step__number {
+        display: none;
+    }
+
+    .work-card {
+        padding-right: 0;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 45px 0 rgba(0, 0, 0, .1);
+        padding: 20px;
+        width: 100%;
+    }
+    .work-card {
+        margin-block: 20px;
+    }
+
+    .work .row {
+        justify-content: center;
+    }
+
+    .theme-btn {
+        max-width: 240px;
+        font-size: 15px;
+    }
+
+    .navbar-brand img {
+        max-width: 80px;
+
+    }
+
+    .navbar .nav-item {
+        margin-right: 10px;
+    }
+
+    .banner-content {
+        max-width: 639px;
+    }
+
+    .pricing-card .card-features li {
+        margin-top: 1rem;
+    }
+
+    .pricing-card {
+        height: 98%;
+    }
+
+    .trusted .section-heading {
+        font-size: 33px;
+        padding-bottom: 18px;
+    }
+
+    .process-item {
+        max-width: fit-content;
+        margin: auto;
+        margin-bottom: 90px;
+    }
+
+    .worry-free__bg {
+        display: none;
+    }
+
+    .worry-free .section-heading {
+        text-align: center;
+    }
+
+    .worry-free .section-paragraph {
+        margin: auto;
+        text-align: center;
+    }
+
+    .worry-free p {
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .worry-free span {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .worry-free-img {
+        text-align: center;
+    }
+
+    .process-card {
+        margin-top: 20px;
+    }
+
+    .about-banner-content h1 {
+        font-size: 50px;
+    }
+
+    .about-banner-content p {
+        font-size: 21px;
+        margin-bottom: 50px;
+    }
+
+    .credit-content h2 {
+        font-size: 38px;
+    }
+
+    .credit-content p,
+    .credit-content p a {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media(max-width:992px) {
+    .navbar form .theme-btn {
+        display: block;
+    }
+
+    .work-card .step-number {
+        display: block;
+        font-size: 60px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .work-card .section-paragraph {
+        font-size: 22px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+
+
+    .work .slick-track {
+        display: flex;
+        gap: 20px;
+
+        padding: 20px 0 40px;
+    }
+
+    .work-card .section-heading {
+        font-size: 24px;
+
+    }
+
+    .navbar-collapse {
+        padding-bottom: 20px;
+    }
+
+    .banner::after {
+
+
+        height: 110px;
+    }
+
+    .packages-banner-content h1 {
+        font-size: 41px;
+    }
+
+    .packages-banner {
+        padding-block: 140px 70px;
+    }
+
+    .our-solution .main-img {
+        margin-bottom: 40px;
+    }
+
+    .our-solution {
+        text-align: center;
+    }
+
+    .our-solution p {
+        margin: auto;
+    }
+
+    .our-solution .solution-list {
+        justify-content: end;
+    }
+
+    .our-solution .theme-btn {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .tailored-content {
+        display: block;
+    }
+
+    .tailored-content h1 {
+        font-size: 40px;
+    }
+
+    .tailored-content h1 {
+        font-size: 55px;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .tailored-content p {
+        text-align: center;
+        margin-block: 10px;
+    }
+
+    .financial-item {
+        margin-bottom: 20px;
+    }
+
+    .feature .section-heading {
+        text-align: center;
+    }
+
+    .feature .section-paragraph {
+        margin: auto;
+        text-align: center;
+    }
+
+    .feature .theme-btn {
+        margin: auto;
+    }
+
+    #credit-fight .square-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .banner {
+        padding: 160px 0 79px;
+    }
+
+    .banner-content h1 {
+        font-size: 41px;
+    }
+
+    .banner-content .review-rating {
+        font-size: 38px;
+    }
+
+    .choice .section-heading {
+        text-align: center;
+    }
+
+    .choice .section-paragraph {
+        margin: auto;
+    }
+
+    .choice .d-flex {
+        justify-content: center;
+    }
+
+    .our-solution .solution-list {
+        justify-content: center;
+    }
+
+    .gurantee-content {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .gurantee-content .theme-btn {
+        margin: auto;
+    }
+
+    .feature .section-paragraph {
+        max-width: 80%;
+    }
+
+    .credit-content h2 {
+        font-size: 28px;
+    }
+
+    .credit {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .credit-content {
+        position: initial;
+        transform: translateY(0px);
+        text-align: center;
+        margin-bottom: 52px;
+
+    }
+
+    .credit-img .mobile-img {
+        display: block;
+        margin: auto;
+    }
+
+    .credit-img .desktop-img {
+        display: none;
+    }
+
+    .credit-content p,
+    .credit-content p a {
+
+        margin: auto;
+        max-width: 75%;
+
+
+    }
+
+    .credit-content-btn {
+        justify-content: center;
+    }
+}
+
+@media(max-width:768px) {
+    .banner::after {
+
+
+        height: 94px;
+    }
+
+    .banner {
+
+        background-position: bottom;
+    }
+
+    .faq-banner {
+        padding-top: 116px;
+    }
+
+    .faq-banner-content h1 {
+        font-size: 37px;
+        margin-bottom: 20px;
+    }
+
+    .faq-section .accordion-button {
+        font-size: 16px;
+    }
+
+    .faq-section .accordion-body {
+        font-size: 16px;
+    }
+
+    .about-banner {
+        padding-bottom: 71px;
+        padding-top: 175px;
+    }
+
+    .about-banner-content h1 {
+        font-size: 36px;
+    }
+
+    .about-banner-content p {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .trusted .theme-btn {
+        margin-bottom: 40px;
+
+    }
+
+    .collection-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:576px) {
+    .navbar {
+        margin: 0;
+        padding: 0;
+    }
+
+    .terms h1 {
+        font-size: 30px;
+    }    
+    .banner-content {
+        max-width: 320px;
+        margin: auto;
+    }
+
+    .banner-content h1 {
+
+        font-size: 30px;
+        margin-bottom: 10px;
+        line-height: 1.1;
+    }
+
+    .banner-content .review-rating img {
+        max-width: 110px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .choice .section-paragraph {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .work .row {
+        display: block;
+    }
+
+    .our-solution p {
+        max-width: 100%;
+    }
+
+    .our-solution .solution-list ul {
+        margin-bottom: 20px;
+    }
+
+    .theme-btn {
+        font-size: 13px;
+    }
+
+    .gurantee img {
+        max-width: 129px;
+    }
+
+    .gurantee {
+
+        margin-inline: 20px;
+        border-radius: 20px;
+
+        .row {
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+    }
+
+    .tailored {
+
+        border-bottom: 6px solid #c1d8e8;
+    }
+
+    .tailored-content h1 {
+        font-size: 40px;
+        background: linear-gradient(#eff8ff, #1096ff) no-repeat 100% 26px;
+    }
+
+    .financial {
+        padding: 0;
+    }
+
+    .financial .most-popular-label {
+        padding-right: 14px;
+    }
+
+    .financial-item {
+        height: 100%;
+
+    }
+
+    .financial .col-lg-4 {
+        margin-bottom: 20px;
+    }
+
+    .financial .most-popular-label::after {
+        right: -11px;
+
+        .packages-banner-content h1 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .packages-banner-content p {
+            font-size: 17px;
+            line-height: 24px;
+            margin-top: 0;
+        }
+
+        .pricing-card .card-header .card-title {
+            font-size: 17px;
+        }
+
+        .pricing-card .card-header .card-aggressiveness {
+            font-size: 12px;
+        }
+
+        .pricing-card .card-header .price-section .price {
+            font-size: 35px;
+        }
+
+        .pricing-card .card-features {
+            padding-inline: 10px;
+        }
+
+        .pricing-card .card-features li span {
+            font-size: 14px;
+        }
+
+        .trusted {
+            padding-top: 0;
+        }
+
+        .trusted .section-heading {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .trusted .theme-btn {
+            margin: auto;
+        }
+
+        .trusted .money-back {
+            margin: auto;
+            margin-top: 50px;
+
+
+        }
+
+        .worry-free .theme-btn {
+            padding: 11px 0px;
+
+        }
+
+    }
+
+    .consultation-card h4 {
+        font-size: 20px;
+    }
+
+    .faq-banner-content h1 {
+        font-size: 27px;
+        margin-bottom: 14px;
+    }
+
+    .faq-banner-content p {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .about-banner-content h1 {
+        font-size: 32px;
+    }
+
+    .about-banner-content p {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .credit-content p,
+    .credit-content p a {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .credit-content-btn {
+        display: block;
+
+        a {
+            display: block;
+            margin: auto;
+            margin-block: 20px;
+
+        }
+    }
+
+    .collection-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .affiliates-heading h1 {
+        font-size: 25px;
+    }
+
+    .affiliates-heading p {
+        font-size: 14px;
+    }
+
+    .affiliates-list li p {
+        font-size: 14px;
+
+    }
+
+    .get-started .section-paragraph {
+        font-size: 14px;
+    }
+
+    .affiliates .get-started form {
+
+        margin-top: 19px;
+        padding: 0.5em;
+    }
+
+    .affiliates .get-started form label {
+        font-size: 14px;
+    }
+
+    .affiliates .get-started form .form-control {
+        padding: 4px 5px;
+        margin-bottom: 10px;
+        height: 42px;
+    }
+
+    .affiliates {
+        padding: 133px 0;
+    }
+
+    .banner {
+        padding: 139px 0 90px;
+    }
+
+    .banner .theme-btn {
+        display: inline-block;
+        margin-top: 9px;
+    }
+
+    .banner-content h2 {
+        font-size: 19px;
+    }
+
+    .choice {
+        background-color: transparent;
+        padding: 20px 0;
+
+        margin: 20px 0;
+    }
+
+    .choice-content {
+        background: #eff8ff;
+        border-bottom: 6px solid #c1d8e8 !important;
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+    .testimonial {
+        padding-bottom: 0;
+
+        .py-5 {
+            padding-bottom: 0 !important;
+        }
+
+        .slick-slider {
+            margin-bottom: 0;
+        }
+    }
+
+    .callback {
+        padding: 0 !important;
+    }
+
+    .trusted-choice {
+        background: #eff8ff;
+        border-bottom: 6px solid #c1d8e8 !important;
+        border-radius: 12px;
+        width: 50%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .choice .trusted-choice h5,
+    .choice .section-heading {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    .section-paragraph {
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+
+    .our-solution .section-heading {
+        margin-top: 40px;
+    }
+
+    .work {
+        padding-top: 0;
+    }
+
+    footer {
+      
+      padding: 0;
+    }
+    .terms ul {
+        padding-left: 15px;
+    }
+}
