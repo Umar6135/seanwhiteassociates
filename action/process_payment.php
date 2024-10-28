@@ -84,8 +84,8 @@ if (!empty($errors)) {
 
 // Authorize.Net API credentials
 $merchantAuthentication = new AnetAPI\MerchantAuthenticationType();
-$merchantAuthentication->setName("5QTdgyy4P6S");  // Replace with your actual merchant login
-$merchantAuthentication->setTransactionKey("5SXY7y5W3d38Zrk7");  // Replace with your actual transaction key
+$merchantAuthentication->setName("3rR57kCMuB");  // Replace with your actual merchant login
+$merchantAuthentication->setTransactionKey("52u5g9ZN27V44rf9");  // Replace with your actual transaction key
 
 // Set up credit card information
 $creditCard = new AnetAPI\CreditCardType();
@@ -165,7 +165,7 @@ $request->setTransactionRequest($transactionRequest);
 
 try {
     $controller = new AnetController\CreateTransactionController($request);
-    $response = $controller->executeWithApiResponse(\net\authorize\api\constants\ANetEnvironment::SANDBOX);
+    $response = $controller->executeWithApiResponse(\net\authorize\api\constants\ANetEnvironment::PRODUCTION);
 
     if ($response != null) {
         if ($response->getMessages()->getResultCode() == "Ok") {
@@ -177,7 +177,7 @@ try {
                 $arbRequest->setSubscription($subscription);
                 
                 $arbController = new AnetController\ARBCreateSubscriptionController($arbRequest);
-                $arbResponse = $arbController->executeWithApiResponse(\net\authorize\api\constants\ANetEnvironment::SANDBOX);
+                $arbResponse = $arbController->executeWithApiResponse(\net\authorize\api\constants\ANetEnvironment::PRODUCTION);
 
                 if ($arbResponse != null && $arbResponse->getMessages()->getResultCode() == "Ok") {
                     echo json_encode(['success' => true, 'transactionId' => $tresponse->getTransId(), 'subscriptionId' => $arbResponse->getSubscriptionId()]);

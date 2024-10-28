@@ -58,6 +58,24 @@ include('header.php');
           <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
         </div>
       </div>
+      <!-- Gender Selection -->
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Gender</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+            <label class="form-check-label" for="male">
+              Male
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+            <label class="form-check-label" for="female">
+              Female
+            </label>
+          </div>
+        </div>
+      </div>
       <div class="text-center">
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
@@ -75,34 +93,39 @@ include('header.php');
 <?php include('footer.php'); ?>
 <script>
 document.getElementById('affiliatesForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-        
-        // Create an object to hold form data
-        const formData = {
-            firstName: document.getElementById('firstName').value,
-            lastName: document.getElementById('lastName').value,
-            email: document.getElementById('email').value,
-            phone: document.getElementById('phone').value
-        };
-        
-        // Send data as JSON
-        fetch('./action/send_to_zapier.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        })
-        .then(response => response.json())
-        .then(data => {
-            // Handle success
-            console.log('Success:', data);
-            alert('Form submitted successfully!');
-        })
-        .catch((error) => {
-            // Handle error
-            console.error('Error:', error);
-            alert('There was an error submitting the form.');
-        });
+    event.preventDefault(); // Prevent the default form submission
+    
+    // Capture the selected gender
+    const gender = document.querySelector('input[name="gender"]:checked') ? 
+                   document.querySelector('input[name="gender"]:checked').value : null;
+    
+    // Create an object to hold form data
+    const formData = {
+        firstName: document.getElementById('firstName').value,
+        lastName: document.getElementById('lastName').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        gender: gender // Add gender to the form data
+    };
+    
+    // Send data as JSON
+    fetch('./action/affiliate_webhook.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle success
+        console.log('Success:', data);
+        alert('Form submitted successfully!');
+    })
+    .catch((error) => {
+        // Handle error
+        console.error('Error:', error);
+        alert('There was an error submitting the form.');
     });
+});
 </script>

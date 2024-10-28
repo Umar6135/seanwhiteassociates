@@ -500,26 +500,26 @@ include('header.php');
                     <form id="callbackForm">
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label for="firstName" class="form-label">First Name</label>
+                                <label for="firstName" class="form-label text-dark" style="font-size: 18px;">First Name</label>
                                 <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="lastName" class="form-label">Last Name</label>
+                                <label for="lastName" class="form-label text-dark" style="font-size: 18px;">Last Name</label>
                                 <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label for="email" class="form-label">Email</label>
+                                <label for="email" class="form-label text-dark" style="font-size: 18px;">Email</label>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="phone" class="form-label">Phone</label>
+                                <label for="phone" class="form-label text-dark" style="font-size: 18px;">Phone</label>
                                 <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn theme-btn dark p-0">Submit</button>
                         </div>
                     </form>
                     <!-- Form Ends Here -->
@@ -543,7 +543,7 @@ include('header.php');
         };
         
         // Send data as JSON
-        fetch('./action/send_to_zapier.php', {
+        fetch('./action/lead_webhook.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
